@@ -7,6 +7,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+@layer components{
+  nav{
+    @apply flex fixed px-16 py-2 w-full h-20 justify-between items-center bg-black bg-opacity-50
+    sm:bg-white sm:text-black sm:bg-opacity-100 sm:h-full sm:absolute sm:flex-col;
+  }
+  .logo{
+    @apply h-full 
+  }
+  .nav-links{
+    @apply flex space-x-5 items-center text-white 
+  }
+  .nav-link{
+    @apply text-opacity-50
+  }
+  .nav-link .active{
+    @apply font-bold text-opacity-100
+  }
+  #nav-cta{
+    @apply bg-white text-black rounded-md py-2 px-3 
+  }
+}
 
 @media (prefers-color-scheme: light) {
   :root {
